@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather API Full Express Tailwind</title>
+</head>
+
+<body class="bg-[#3937fa]">
+    <section class="flex flex-col justify-center items-center h-[100vh] ">
+        <div class="container mx-auto flex flex-col md:flex-row gap-8 md:gap-0 justify-center items-center relative">
+            <img src="./images/upload-icon.svg" alt="icon" class="hidden md:block" />
+
+            <input type="text"
+                class="input-location border-0 outline-0  w-[80%] md:w-[40%] px-2 text-4xl bg-[#3937fa] text-white text-center ms-10 placeholder-white m-4"
+                placeholder="Enter location" />
+            <img src="./images/notification.svg" alt="notification" class="hidden md:block" />
+        </div>
+
+        <div class="flex justify-center items-center md:w-[50%]">
+            <div class="img-container w-[100%] md:w-[50%]">
+                <img src="./images/icons/static/day.svg" alt="day-image" class="w-[100%]" />
+            </div>
+            <div class="flex flex-col gap-10">
+                <h2 class="temp text-white text-6xl font-bold">72 <sup>0</sup></h2>
+                <p class="expected text-white text-4xl">Feels like 62<sup>0</sup></p>
+            </div>
+        </div>
+        <p class="text-white text-center my-8">Make most of this nice weather that I generated for you. Or else</p>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
